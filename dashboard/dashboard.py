@@ -122,7 +122,7 @@ elif pilihan_menu == "Kalkulator PM2.5":
     col_input, col_result = st.columns([1, 2])
 
     with col_input:
-        st.markdown('<div class="bg-white p-4 rounded-lg shadow border border-gray-200"> Input Nilai PM2.5', unsafe_allow_html=True)
+        st.markdown('<div class="bg-white p-4 rounded-lg shadow border border-gray-200 text-black"> Input Nilai PM2.5', unsafe_allow_html=True)
         pm25_input = st.number_input(label= "", min_value=0.0, max_value=1000.0, value=45.0, step=1.0)
         cek_button = st.button("Cek Status Sekarang", use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
