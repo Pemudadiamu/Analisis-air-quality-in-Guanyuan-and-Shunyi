@@ -113,7 +113,7 @@ if pilihan_menu == "Dashboard Analisis":
 elif pilihan_menu == "Kalkulator PM2.5":
     
     st.markdown("""
-        <div class="bg-indigo-600 p-6 rounded-lg shadow-lg mb-6 text-white">
+        <div class="bg-indigo-600 p-6 rounded-lg shadow-lg mb-6 mt-6 text-white">
             <h1 class="text-3xl font-bold mb-2">Kalkulator Status Kualitas Udara</h1>
             <p class="text-indigo-100 text-lg">Prediksi tingkat bahaya polusi udara secara real-time berdasarkan angka PM2.5</p>
         </div>
