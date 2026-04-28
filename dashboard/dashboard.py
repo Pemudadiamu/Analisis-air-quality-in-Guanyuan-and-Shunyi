@@ -104,7 +104,7 @@ if pilihan_menu == "Dashboard Analisis":
         st.pyplot(fig_scatter2)
 
     with st.expander("Lihat Penjelasan Korelasi"):
-        st.write("Kecepatan angin memiliki korelasi negatif yang cukup kuat terhadap polusi; angin kencang terbukti efektif menyapu PM2.5. Di sisi lain, curah hujan secara observasi per jam tidak menunjukkan dampak signifikan dalam menurunkan tingkat polusi.")
+        st.write("Kecepatan angin memiliki korelasi negatif yang cukup kuat terhadap polusi, angin kencang terbukti efektif menyapu PM2.5. Di sisi lain, curah hujan secara observasi per jam tidak menunjukkan dampak signifikan dalam menurunkan tingkat polusi.")
 
 elif pilihan_menu == "Kalkulator PM2.5":
     
