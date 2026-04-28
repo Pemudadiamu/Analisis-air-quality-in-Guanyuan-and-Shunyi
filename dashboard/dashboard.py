@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 st.set_page_config(page_title="Dashboard Air Quality",  layout="wide")
 
@@ -24,7 +25,10 @@ st.markdown("""
 # Load Data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("cleaned_df_quality.csv")
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(current_dir, "cleaned_df_quality.csv")
+
+    df = pd.read_csv(file_path)
     df['datatime'] = pd.to_datetime(df['datatime'])
     return df
 
